@@ -135,48 +135,38 @@ body {
   font-weight: 300;
   font-family: var(--secondary-font-family);
 }
-.cover .cover__code-presentation--user:before, .cover .cover__code-presentation--user:after, .cover .cover__code-presentation--user span.control:before, .cover .cover__code-presentation--user span.after:after {
-  box-sizing: border-box;
-  content: "";
-  position: absolute;
-  z-index: 1;
-}
 .cover .cover__code-presentation--user {
-  margin: 0 auto;
-  width: 40rem;
+  margin: 0.5rem;
 }
-.cover .cover__code-presentation--user:before {
-  content: "valeria-lm.com";
+.cover .cover__code-presentation--user div:first-child {
+  position: absolute;
+  padding-left: 0.5rem;
+}
+.cover .cover__code-presentation--user div:first-child .fa-circle:first-child {
+  font-size: 0.6rem;
+  color: var(--circle-pink-color-codePresentation);
+}
+.cover .cover__code-presentation--user div:first-child .fa-circle:nth-child(2) {
+  font-size: 0.6rem;
+  color: var(--circle-yellow-color-codePresentation);
+}
+.cover .cover__code-presentation--user div:first-child .fa-circle:nth-child(3) {
+  font-size: 0.6rem;
+  color: var(--circle-green-color-codePresentation);
+}
+.cover .cover__code-presentation--user div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.cover .cover__code-presentation--user div:nth-child(2) p {
+  padding: 0.2rem 5rem;
   color: var(--white-color);
-  padding-top: 0.3rem;
+  background-color: #202226;
   font-size: 0.8rem;
-  text-align: center;
-  top: 9.5rem;
-  width: 40rem;
-  height: 1.5rem;
-  /* background-color: #202226; */
   border-radius: 1rem;
 }
-.cover .cover__code-presentation--user .control:before {
-  content: "";
-  top: 10rem;
-  padding: 0.3rem;
-  border-radius: 100%;
-}
-.cover .cover__code-presentation--user .control:nth-child(1):before {
-  margin-left: 1rem;
-  background-color: var(--circle-pink-color-codePresentation);
-}
-.cover .cover__code-presentation--user .control:nth-child(2):before {
-  margin-left: 2rem;
-  background-color: var(--circle-yellow-color-codePresentation);
-}
-.cover .cover__code-presentation--user .control:nth-child(3):before {
-  margin-left: 3rem;
-  background-color: var(--circle-green-color-codePresentation);
-}
 .cover .cover__code-presentation--info {
-  padding: 5rem 4rem;
+  padding: 4rem;
 }
 .cover .cover__code-presentation--info .code-presentation__info--css > div,
 .cover .cover__code-presentation--info .code-presentation__info--css > p {
@@ -203,20 +193,14 @@ body {
     flex-direction: column;
     align-items: inherit;
     padding: 0 2rem;
-    height: 100vh;
+    height: 110vh;
   }
-  .cover .cover__code-presentation--user {
-    width: 20rem;
+  .cover .cover__code-presentation div:first-child .fa-circle:first-child,
+.cover .cover__code-presentation div:first-child .fa-circle:nth-child(2),
+.cover .cover__code-presentation div:first-child .fa-circle:nth-child(3) {
+    font-size: 0.5rem;
   }
-  .cover .cover__code-presentation--user:before {
-    top: 21rem;
-    width: 20rem;
-  }
-  .cover .cover__code-presentation--user .control:before {
-    top: 21.5rem;
-    padding: 0.2rem;
-  }
-  .cover .cover__code-presentation--info {
-    padding: 5rem 2rem;
+  .cover .cover__code-presentation--user div:nth-child(2) p {
+    padding: 0.2rem 2rem;
   }
 }

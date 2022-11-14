@@ -153,58 +153,42 @@ body {
     font-weight: 300;
     font-family: var(--secondary-font-family);
 
-    &--user:before,
-    &--user:after,
-    &--user span.control:before,
-    &--user span.after:after {
-      box-sizing: border-box;
-      content: "";
-      position: absolute;
-      z-index: 1;
-    }
-
     &--user {
-      margin: 0 auto;
-      width: 40rem;
+      margin: 0.5rem;
+      & div:first-child {
+        position: absolute;
+        padding-left: 0.5rem;
 
-      &:before {
-        content: "valeria-lm.com";
-        color: var(--white-color);
-        padding-top: 0.3rem;
-        font-size: 0.8rem;
-        text-align: center;
-        top: 9.5rem;
-        width: 40rem;
-        height: 1.5rem;
-        /* background-color: #202226; */
-        border-radius: 1rem;
+        .fa-circle:first-child {
+          font-size: 0.6rem;
+          color: var(--circle-pink-color-codePresentation);
+        }
+        .fa-circle:nth-child(2) {
+          font-size: 0.6rem;
+          color: var(--circle-yellow-color-codePresentation);
+        }
+        .fa-circle:nth-child(3) {
+          font-size: 0.6rem;
+          color: var(--circle-green-color-codePresentation);
+        }
       }
 
-      .control:before {
-        content: "";
-        top: 10rem;
-        padding: 0.3rem;
-        border-radius: 100%;
-      }
+      & div:nth-child(2) {
+        display: flex;
+        justify-content: center;
 
-      .control:nth-child(1):before {
-        margin-left: 1rem;
-        background-color: var(--circle-pink-color-codePresentation);
-      }
-
-      .control:nth-child(2):before {
-        margin-left: 2rem;
-        background-color: var(--circle-yellow-color-codePresentation);
-      }
-
-      .control:nth-child(3):before {
-        margin-left: 3rem;
-        background-color: var(--circle-green-color-codePresentation);
+        p {
+          padding: 0.2rem 5rem;
+          color: var(--white-color);
+          background-color: #202226;
+          font-size: 0.8rem;
+          border-radius: 1rem;
+        }
       }
     }
 
     &--info {
-      padding: 5rem 4rem;
+      padding: 4rem;
 
       .code-presentation__info--css {
         > div,
@@ -237,23 +221,23 @@ body {
     flex-direction: column;
     align-items: inherit;
     padding: 0 2rem;
-    height: 100vh;
+    height: 110vh;
 
     .cover__code-presentation {
-      &--user {
-        width: 20rem;
-        &:before {
-          top: 21rem;
-          width: 20rem;
-        }
-        .control:before {
-          top: 21.5rem;
-          padding: 0.2rem;
+      & div:first-child {
+        .fa-circle:first-child,
+        .fa-circle:nth-child(2),
+        .fa-circle:nth-child(3) {
+          font-size: 0.5rem;
         }
       }
 
-      &--info {
-        padding: 5rem 2rem;
+      &--user {
+        div:nth-child(2) {
+          p {
+            padding: 0.2rem 2rem;
+          }
+        }
       }
     }
   }
