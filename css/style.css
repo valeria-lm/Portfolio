@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&display=swap");
+:root {
+  --white-color: #ffffff;
+  --turquoise-color: #00ffc8;
+  --circle-pink-color-codePresentation: #ff5f56;
+  --circle-yellow-color-codePresentation: #ffbd2e;
+  --circle-green-color-codePresentation: #27c93f;
+  --principal-font-family: "Poppins", sans-serif;
+  --secondary-font-family: "Fira Sans", sans-serif;
+  --bg-color-codePresentation: #171a1b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*1rem= 10px*/
+}
+
+body {
+  background: linear-gradient(-45deg, #054739, #042b22, #031c22, #030a22, #100322, #03061f, #1c1e22);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 20s ease infinite;
+          animation: gradient 20s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  margin-bottom: 2rem;
+  font-family: var(--principal-font-family);
+}
+.nav .nav__links {
+  display: flex;
+  gap: 3rem;
+}
+.nav .nav__sections li {
+  list-style: none;
+}
+.nav .nav__sections li:first-child {
+  border-bottom: 0.15rem solid var(--white-color);
+}
+.nav .nav__sections li a {
+  position: relative;
+  font-weight: 300;
+  font-size: 1rem;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.nav .nav__sections li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0%;
+  height: 0.1rem;
+  background-color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+.nav .nav__sections li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.nav .nav__icons i {
+  color: var(--white-color);
+  font-size: 1.6rem;
+}
+.nav .nav__icons i:hover {
+  transform: scale(1.2);
+  transition: 0.2s all;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  .nav .nav__icons {
+    display: none;
+  }
+}
+.cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  height: 70vh;
+}
+.cover .cover__text-presentation h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-family: var(--principal-font-family);
+}
+.cover .cover__text-presentation h1:first-child {
+  color: var(--turquoise-color);
+  font-weight: 400;
+}
+.cover .cover__text-presentation h1:nth-child(2) {
+  color: var(--white-color);
+}
+.cover .cover__text-presentation h1:nth-child(3) {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--turquoise-color);
+}
+.cover .cover__code-presentation {
+  width: min(100%, 40rem);
+  background-color: var(--bg-color-codePresentation);
+  border: 1px solid rgba(255, 255, 255, 0.1882352941);
+  border-radius: 1rem 1rem 0 0;
+  font-weight: 300;
+  font-family: var(--secondary-font-family);
+}
+.cover .cover__code-presentation--user:before, .cover .cover__code-presentation--user:after, .cover .cover__code-presentation--user span.control:before, .cover .cover__code-presentation--user span.after:after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+.cover .cover__code-presentation--user {
+  margin: 0 auto;
+  width: 40rem;
+}
+.cover .cover__code-presentation--user:before {
+  content: "valeria-lm.com";
+  color: var(--white-color);
+  padding-top: 0.3rem;
+  font-size: 0.8rem;
+  text-align: center;
+  top: 9.5rem;
+  width: 40rem;
+  height: 1.5rem;
+  /* background-color: #202226; */
+  border-radius: 1rem;
+}
+.cover .cover__code-presentation--user .control:before {
+  content: "";
+  top: 10rem;
+  padding: 0.3rem;
+  border-radius: 100%;
+}
+.cover .cover__code-presentation--user .control:nth-child(1):before {
+  margin-left: 1rem;
+  background-color: var(--circle-pink-color-codePresentation);
+}
+.cover .cover__code-presentation--user .control:nth-child(2):before {
+  margin-left: 2rem;
+  background-color: var(--circle-yellow-color-codePresentation);
+}
+.cover .cover__code-presentation--user .control:nth-child(3):before {
+  margin-left: 3rem;
+  background-color: var(--circle-green-color-codePresentation);
+}
+.cover .cover__code-presentation--info {
+  padding: 5rem 4rem;
+}
+.cover .cover__code-presentation--info .code-presentation__info--css > div,
+.cover .cover__code-presentation--info .code-presentation__info--css > p {
+  padding: 0.5rem 1rem;
+}
+.cover .cover__code-presentation--info .code-presentation__info--css .pink-color {
+  color: var(--circle-pink-color-codePresentation);
+}
+.cover .cover__code-presentation--info .code-presentation__info--css .yellow-color {
+  color: var(--circle-yellow-color-codePresentation);
+}
+.cover .cover__code-presentation--info .code-presentation__info--css .turquoise-color {
+  color: var(--turquoise-color);
+}
+.cover .cover__code-presentation--info .code-presentation__info--css p {
+  color: var(--white-color);
+}
+.cover .cover__code-presentation--info .code-presentation__info--css i {
+  color: #6f6f6f;
+}
+
+@media (max-width: 720px) {
+  .cover {
+    flex-direction: column;
+    align-items: inherit;
+    padding: 0 2rem;
+    height: 100vh;
+  }
+  .cover .cover__code-presentation--user {
+    width: 20rem;
+  }
+  .cover .cover__code-presentation--user:before {
+    top: 21rem;
+    width: 20rem;
+  }
+  .cover .cover__code-presentation--user .control:before {
+    top: 21.5rem;
+    padding: 0.2rem;
+  }
+  .cover .cover__code-presentation--info {
+    padding: 5rem 2rem;
+  }
+}
