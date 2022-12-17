@@ -1,0 +1,126 @@
+.cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  height: 70vh;
+
+  .cover__text-presentation {
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-family: $principal-font-family;
+
+      &:first-child {
+        color: $turquoise-color;
+        font-weight: 400;
+      }
+
+      &:nth-child(2) {
+        color: $white-color;
+      }
+
+      &:nth-child(3) {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $turquoise-color;
+      }
+    }
+  }
+
+  .cover__code-presentation {
+    width: min(100%, 40rem);
+    background-color: $bg-color-codePresentation;
+    border: 1px solid #ffffff30;
+    border-radius: 1rem 1rem 0 0;
+    font-weight: 300;
+    font-family: $secondary-font-family;
+
+    &--user {
+      margin: 0.5rem;
+      & div:first-child {
+        position: absolute;
+        padding-left: 0.5rem;
+
+        .fa-circle:first-child {
+          font-size: 0.6rem;
+          color: $circle-pink-color-codePresentation;
+        }
+        .fa-circle:nth-child(2) {
+          font-size: 0.6rem;
+          color: $circle-yellow-color-codePresentation;
+        }
+        .fa-circle:nth-child(3) {
+          font-size: 0.6rem;
+          color: $circle-green-color-codePresentation;
+        }
+      }
+
+      & div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+
+        p {
+          padding: 0.2rem 5rem;
+          color: $white-color;
+          background-color: #202226;
+          font-size: 0.8rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+
+    &--info {
+      padding: 4rem 3rem;
+
+      .code-presentation__info--css {
+        > div,
+        > p {
+          padding: 0.5rem 1rem;
+        }
+
+        .pink-color {
+          color: $circle-pink-color-codePresentation;
+        }
+        .yellow-color {
+          color: $circle-yellow-color-codePresentation;
+        }
+        .turquoise-color {
+          color: $turquoise-color;
+        }
+        p {
+          color: $white-color;
+        }
+        i {
+          color: #6f6f6f;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .cover {
+    flex-direction: column;
+    align-items: inherit;
+    padding: 0 2rem;
+    height: 110vh;
+
+    .cover__code-presentation {
+      & div:first-child {
+        .fa-circle:first-child,
+        .fa-circle:nth-child(2),
+        .fa-circle:nth-child(3) {
+          font-size: 0.5rem;
+        }
+      }
+
+      &--user {
+        div:nth-child(2) {
+          p {
+            padding: 0.2rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
