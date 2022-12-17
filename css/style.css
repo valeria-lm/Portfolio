@@ -166,7 +166,7 @@ body {
   border-radius: 1rem;
 }
 .cover .cover__code-presentation--info {
-  padding: 4rem;
+  padding: 4rem 3rem;
 }
 .cover .cover__code-presentation--info .code-presentation__info--css > div,
 .cover .cover__code-presentation--info .code-presentation__info--css > p {
