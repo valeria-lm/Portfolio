@@ -1,0 +1,59 @@
+main {
+  padding: 0 4rem;
+  font-family: $principal-font-family;
+
+  .main__title {
+    color: $white-color;
+    padding-bottom: 2rem;
+  }
+
+  .articles {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .main__articles-left,
+  .main__articles-right {
+    margin-bottom: 6rem;
+
+    &--image {
+      object-fit: contain;
+      height: 20rem;
+      width: 40rem;
+      background-color: $bg-color-previewImages-projects;
+    }
+
+    &--info {
+      color: $white-color;
+
+      h3 {
+        padding-bottom: 1rem;
+      }
+
+      p {
+        padding-bottom: 2.5rem;
+        font-weight: 300;
+      }
+
+      a {
+        text-decoration: none;
+        color: $turquoise-color;
+
+        i {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+
+  .main__articles-right {
+    &--info {
+      text-align: right;
+
+      i {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
