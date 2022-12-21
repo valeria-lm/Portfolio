@@ -20,9 +20,26 @@
       }
 
       &:nth-child(3) {
+        width: 27rem;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid $turquoise-color;
+        animation: typing 2s steps(22), blink 0.5s step-end;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: $turquoise-color;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
       }
     }
   }
@@ -36,7 +53,7 @@
     font-family: $secondary-font-family;
 
     &--user {
-      margin: 0.5rem;
+      margin: rem;
       & div:first-child {
         position: absolute;
         padding-left: 0.5rem;
@@ -102,7 +119,7 @@
   .cover {
     flex-direction: column;
     align-items: inherit;
-    padding: 0 2rem;
+    padding: 0 2rem 2rem;
     height: 110vh;
 
     .cover__code-presentation {
@@ -120,6 +137,10 @@
             padding: 0.2rem 2rem;
           }
         }
+      }
+
+      &--info {
+        padding: 4rem 1.5rem;
       }
     }
   }

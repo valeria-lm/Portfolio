@@ -7,21 +7,17 @@ main {
     padding-bottom: 2rem;
   }
 
-  .articles {
+  .main__articles-left,
+  .main__articles-right {
     display: flex;
     align-items: center;
     gap: 4rem;
-  }
-
-  .main__articles-left,
-  .main__articles-right {
     margin-bottom: 6rem;
 
     &--image {
       object-fit: contain;
-      height: 20rem;
-      width: 40rem;
-      background-color: $bg-color-previewImages-projects;
+      height: 100%;
+      width: 50%;
     }
 
     &--info {
@@ -39,10 +35,14 @@ main {
       a {
         text-decoration: none;
         color: $turquoise-color;
+      }
+    }
+  }
 
-        i {
-          margin-left: 1rem;
-        }
+  .main__articles-left {
+    &--info {
+      i {
+        margin-left: 1rem;
       }
     }
   }
@@ -53,6 +53,26 @@ main {
 
       i {
         margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    padding: 0 2rem;
+
+    .main__articles-left {
+      flex-direction: column;
+      &--image {
+        width: 100%;
+      }
+    }
+
+    .main__articles-right {
+      flex-direction: column-reverse;
+      &--image {
+        width: 100%;
       }
     }
   }
