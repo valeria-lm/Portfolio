@@ -1,0 +1,50 @@
+.container-uxui-case-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  .arrow-left-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    text-decoration: none;
+    background-color: $white-color;
+    border-radius: 50%;
+  }
+
+  div {
+    color: $white-color;
+
+    a {
+      text-decoration: none;
+      color: $white-color;
+    }
+  }
+}
+.container-uxui-case {
+  width: 100%;
+
+  .uxui-case-image {
+    width: min(100%, 80rem);
+    height: 100%;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #E8E5F0;
+
+    img {
+      width: min(100%, 40rem);
+      height: 100%;
+    }
+
+    video {
+      width: 16rem;
+    }
+  }
+}
