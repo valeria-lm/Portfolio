@@ -53,15 +53,19 @@ main {
         }
 
         a {
-          width: 12rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.5rem 1rem;
           color: $bg-color-codePresentation;
           background-color: $white-color;
           font-weight: 500;
+          font-size: 1rem;
           text-decoration: none;
-          border-radius: 1rem;
+          border-radius: 0.5rem;
         }
       }
-      
+
       &:hover .card__info {
         top: 0;
         font-size: 1.2em;

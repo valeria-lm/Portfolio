@@ -38,13 +38,14 @@
     gap: 2rem;
     background-color: #E8E5F0;
 
-    img {
+    img:first-child {
       width: min(100%, 40rem);
       height: 100%;
     }
 
-    video {
-      width: 16rem;
+    img:nth-child(2) {
+      width: min(100%, 20rem);
+      height: 100%;
     }
   }
 }
