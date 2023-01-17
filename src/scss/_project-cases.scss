@@ -39,12 +39,12 @@
     padding: 2rem 0;
     background-color: #e7e7e7;
 
-    img:first-child {
+    .prototype-screen {
       width: min(100%, 40rem);
       height: 100%;
     }
 
-    img:nth-child(2) {
+    .prototype-gadget {
       width: min(100%, 20rem);
       height: 100%;
     }
