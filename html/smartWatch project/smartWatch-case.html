@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="toggle" class="dark-mode">
+  <script src="/app.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,6 +34,16 @@
           ><i class="fa-brands fa-square-github"></i
         ></a>
         <i class="fa-brands fa-square-twitter"></i>
+
+        <label class="switch">
+          <input
+            type="checkbox"
+            name="dark_light"
+            onclick="toggleColorMode()"
+            title="Toggle dark/light mode"
+          />
+          <span class="slider"></span>
+        </label>
       </div>
     </nav>
 
@@ -45,7 +56,9 @@
         <div>
           <a href="/html/smartWatch project/smartWatch-case.html">UX/UI Case</a>
           <b>|</b>
-          <a href="/html/smartWatch project/smartWatch-prototype.html">Prototype</a>
+          <a href="/html/smartWatch project/smartWatch-prototype.html"
+            >Prototype</a
+          >
         </div>
       </div>
 

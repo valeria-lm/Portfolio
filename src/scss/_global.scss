@@ -5,29 +5,34 @@
   /*1rem= 10px*/
 }
 
-body {
-  background: linear-gradient(
-    -45deg,
-    #08705a,
-    #064133,
-    #063844,
-    #071647,
-    #1f0642,
-    #070c41,
-    #393d46
-  );
-  background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+html {
+  background: radial-gradient(
+      ellipse at center,
+      $purple-color -90%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(ellipse at center, $blue-color -90%, rgba(0, 0, 0, 0) 70%),
+    radial-gradient(
+        ellipse at center,
+        $turquoise-color -90%,
+        rgba(0, 0, 0, 0) 70%
+      )
+      $bg-color;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 900px 900px, 900px 900px, 900px 900px;
+  background-attachment: fixed;
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  animation: bganimation 30s infinite;
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+  50% {
+    background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+  }
+  100% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
   }
 }

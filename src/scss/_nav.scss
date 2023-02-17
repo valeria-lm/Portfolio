@@ -17,7 +17,7 @@
 
       a {
         position: relative;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 1rem;
         color: $white-color;
         text-decoration: none;
@@ -57,11 +57,8 @@
 
 @media (max-width: 720px) {
   .nav {
-    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
     padding: 2rem 1rem;
-
-    .nav__icons {
-      display: none;
-    }
   }
 }

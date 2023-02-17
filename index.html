@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="toggle" class="dark-mode">
+  <script src="app.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,6 +34,16 @@
           ><i class="fa-brands fa-square-github"></i
         ></a>
         <i class="fa-brands fa-square-twitter"></i>
+
+        <label class="switch">
+          <input
+            type="checkbox"
+            name="dark_light"
+            onclick="toggleColorMode()"
+            title="Toggle dark/light mode"
+          />
+          <span class="slider"></span>
+        </label>
       </div>
     </nav>
 
@@ -62,9 +73,7 @@
               >.AboutMe <span class="yellow-color">{</span></span
             >
             <div>
-              <p>
-                <span class="turquoise-color">Country:</span> Argentina;
-              </p>
+              <p><span class="turquoise-color">Country:</span> Argentina;</p>
               <p>
                 <span class="turquoise-color">Profession:</span> UX/UI Designer;
               </p>
@@ -72,7 +81,8 @@
                 <span class="turquoise-color">Knowledge:</span> HTML, CSS, JS;
               </p>
               <p>
-                <span class="turquoise-color">Tools:</span> Figma, Adobe XD, Miro;
+                <span class="turquoise-color">Tools:</span> Figma, Adobe XD,
+                Miro;
               </p>
             </div>
             <span class="yellow-color">}</span>

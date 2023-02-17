@@ -1,0 +1,75 @@
+html.light-mode {
+  background: radial-gradient(
+      ellipse at center,
+      $purple-color -90%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(ellipse at center, $blue-color -90%, rgba(0, 0, 0, 0) 70%),
+    radial-gradient(
+        ellipse at center,
+        $turquoise-color -90%,
+        rgba(0, 0, 0, 0) 70%
+      )
+      $white-color;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 900px 900px, 900px 900px, 900px 900px;
+  background-attachment: fixed;
+
+  animation: bganimation 30s infinite;
+
+  body {
+    .nav {
+      .nav__sections {
+        li {
+          a {
+            color: $bg-color;
+
+            &::after {
+              background-color: $bg-color;
+            }
+          }
+        }
+      }
+
+      .nav__icons {
+        i {
+          color: $bg-color;
+        }
+      }
+    }
+
+    .cover {
+      .cover__text-presentation {
+        h1 {
+          color: $bg-color;
+
+          &:nth-child(3) {
+            border-right: 3px solid $bg-color;
+            -webkit-text-stroke-color: $bg-color;
+          }
+        }
+      }
+    }
+
+    main {
+      .main__title {
+        color: $bg-color;
+      }
+
+      .container-uxui-case-options {
+        .arrow-left-icon {
+          color: $white-color;
+          background-color: $bg-color;
+        }
+
+        div {
+          color: $bg-color;
+
+          a {
+            color: $bg-color;
+          }
+        }
+      }
+    }
+  }
+}
