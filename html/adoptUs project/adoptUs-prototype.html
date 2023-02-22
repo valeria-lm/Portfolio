@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" id="toggle" class="dark-mode">
-  <script src="/app.js"></script>
+<html lang="en" id="theme">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
     <script
-      src="https://kit.fontawesome.com/d8433bcd8c.js"
-      crossorigin="anonymous"
+    src="https://kit.fontawesome.com/d8433bcd8c.js"
+    crossorigin="anonymous"
     ></script>
     <title>my-portfolio</title>
   </head>
@@ -19,51 +18,51 @@
         <li><a href="/html/projects.html">Projects</a></li>
         <li><a href="/multimedia/CV-Valeria Lopez Matos.pdf" download>Download CV</a></li>
       </ul>
-
+      
       <div class="nav__icons nav__links">
         <a
-          href="https://www.linkedin.com/in/valeria-l%C3%B3pez-matos-18186a23a/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-        <a href="https://github.com/valeria-lm" target="_blank"
+        href="https://www.linkedin.com/in/valeria-l%C3%B3pez-matos-18186a23a/"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/valeria-lm" target="_blank"
           ><i class="fa-brands fa-square-github"></i
-        ></a>
-        <i class="fa-brands fa-square-twitter"></i>
-
-        <label class="switch">
-          <input
-            type="checkbox"
-            name="dark_light"
-            onclick="toggleColorMode()"
-            title="Toggle dark/light mode"
-          />
-          <span class="slider"></span>
-        </label>
-      </div>
-    </nav>
-
+            ></a>
+            <i class="fa-brands fa-square-twitter"></i>
+            
+            <label class="switch">
+              <input
+              type="checkbox"
+              name="dark_light"
+              title="Toggle dark/light mode"
+              id="toggle"
+              />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </nav>
+        
     <main>
       <div class="container-uxui-case-options">
         <a href="/html/projects.html" class="arrow-left-icon">
           <i class="fa-solid fa-chevron-left"></i>
         </a>
-
+        
         <div>
           <a
-            href="/html/adoptUs project/adoptUs-case.html"
-            class="uxui-case-option"
-            >UX/UI Case</a
+          href="/html/adoptUs project/adoptUs-case.html"
+          class="uxui-case-option"
+          >UX/UI Case</a
           >
           <b>|</b>
           <a
-            href="/html/adoptUs project/adoptUs-prototype.html"
-            class="prototype-option"
-            >Prototype</a
+          href="/html/adoptUs project/adoptUs-prototype.html"
+          class="prototype-option"
+          >Prototype</a
           >
         </div>
       </div>
-
+      
       <div class="container-uxui-case">
         <div>
           <img class="prototype-screen" src="/multimedia/videos/adoptus-mockups.gif" />
@@ -72,4 +71,6 @@
       </div>
     </main>
   </body>
+
+  <script src="/app.js"></script>
 </html>
