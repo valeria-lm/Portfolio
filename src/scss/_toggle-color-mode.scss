@@ -11,7 +11,7 @@
     height: 0;
 
     &:checked + .slider {
-      background-color: $bg-color;
+      background-color: $black-color;
     }
 
     &:checked + .slider:before {
@@ -21,7 +21,7 @@
 
     &:checked + .slider::after {
       left: 25%;
-      background-color: $bg-color;
+      background-color: $black-color;
     }
   }
 

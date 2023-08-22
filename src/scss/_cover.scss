@@ -47,7 +47,7 @@
   .cover__code-presentation {
     width: min(100%, 40rem);
     background-color: $bg-color-codePresentation;
-    border: 1px solid #ffffff30;
+    border: 1px solid $bg-transparent-white-tags;
     border-radius: 1rem 1rem 0 0;
     font-weight: 300;
     font-family: $secondary-font-family;
@@ -79,7 +79,7 @@
         p {
           padding: 0.2rem 5rem;
           color: $white-color;
-          background-color: #202226;
+          background-color: $bg-transparent-white-tags;
           font-size: 0.8rem;
           border-radius: 1rem;
         }
@@ -95,11 +95,11 @@
           padding: 0.5rem 1rem;
         }
 
-        .pink-color {
-          color: $circle-pink-color-codePresentation;
+        .blue-color {
+          color: $blue-color;
         }
-        .yellow-color {
-          color: $circle-yellow-color-codePresentation;
+        .purple-color {
+          color: $purple-color;
         }
         .turquoise-color {
           color: $turquoise-color;
@@ -108,7 +108,7 @@
           color: $white-color;
         }
         i {
-          color: #6f6f6f;
+          color: $bg-transparent-white-tags;
         }
       }
     }

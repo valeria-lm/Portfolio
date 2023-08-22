@@ -22,10 +22,10 @@ html.light-mode {
       .nav__sections {
         li {
           a {
-            color: $bg-color;
+            color: $black-color;
 
             &::after {
-              background-color: $bg-color;
+              background-color: $black-color;
             }
           }
         }
@@ -33,7 +33,7 @@ html.light-mode {
 
       .nav__icons {
         i {
-          color: $bg-color;
+          color: $black-color;
         }
       }
     }
@@ -41,11 +41,11 @@ html.light-mode {
     .cover {
       .cover__text-presentation {
         h1 {
-          color: $bg-color;
+          color: $black-color;
 
           &:nth-child(3) {
-            border-right: 3px solid $bg-color;
-            -webkit-text-stroke-color: $bg-color;
+            border-right: 3px solid $black-color;
+            -webkit-text-stroke-color: $black-color;
           }
         }
       }
@@ -53,20 +53,32 @@ html.light-mode {
 
     main {
       .main__title {
-        color: $bg-color;
+        color: $black-color;
       }
 
       .container-uxui-case-options {
         .arrow-left-icon {
           color: $white-color;
-          background-color: $bg-color;
+          background-color: $black-color;
         }
 
         div {
-          color: $bg-color;
+          color: $black-color;
 
           a {
-            color: $bg-color;
+            color: $black-color;
+          }
+        }
+      }
+
+      .main__grid--cards {
+        background-color: $white-color;
+
+        .card__info {
+          color: $black-color;
+
+          &--body span {
+            background-color: $bg-transparent-black-tags;
           }
         }
       }
