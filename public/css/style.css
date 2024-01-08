@@ -64,6 +64,9 @@ html {
     gap: 2rem;
     padding: 2rem 1rem;
   }
+  .nav .nav__sections li a {
+    font-size: 0.8rem;
+  }
 }
 .switch {
   display: block;
@@ -170,6 +173,7 @@ html.dark-mode body main .container-uxui-case-options div a {
 }
 .cover .cover__text-presentation--photo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
 }
@@ -188,7 +192,7 @@ html.dark-mode body main .container-uxui-case-options div a {
      object-fit: cover;
 }
 .cover .cover__text-presentation h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-family: "Archivo Expanded";
 }
 .cover .cover__text-presentation h1:first-child {
@@ -260,8 +264,13 @@ html.dark-mode body main .container-uxui-case-options div a {
   .cover {
     flex-direction: column;
     align-items: inherit;
+    justify-content: inherit;
     padding: 0 2rem 2rem;
     height: 110vh;
+  }
+  .cover .cover__text-presentation--photo {
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
   .cover .cover__container {
     display: flex;
