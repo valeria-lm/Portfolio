@@ -8,21 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
 // recuperar el mode del localStorage
 const setTheme = () => {
   const modeState = localStorage.getItem("mode");
-  if (modeState && modeState === "light-mode") {
+  if (modeState && modeState === "dark-mode") {
     theme.className = modeState;
     toggle.checked = true;
   } else {
-    theme.className = "dark-mode";
+    theme.className = "light-mode";
     toggle.checked = false;
   }
 };
 
 toggle.addEventListener("change", () => {
   if (toggle.checked) {
-    localStorage.setItem("mode", "light-mode");
-    theme.className = "light-mode";
-  } else {
     localStorage.setItem("mode", "dark-mode");
     theme.className = "dark-mode";
+  } else {
+    localStorage.setItem("mode", "light-mode");
+    theme.className = "light-mode";
   }
 });

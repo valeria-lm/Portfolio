@@ -1,63 +1,47 @@
 .switch {
-  font-size: 17px;
+  display: block;
   position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 1.6rem;
+  width: 3rem;
+  height: 2rem;
 
   input {
-    opacity: 1;
+    opacity: 0;
     width: 0;
     height: 0;
 
     &:checked + .slider {
-      background-color: $black-color;
+      background-color: $white-color;
     }
 
     &:checked + .slider:before {
-      transform: translateX(1.8rem);
-      background: $bg-btn-lightmode-color;
-    }
-
-    &:checked + .slider::after {
-      left: 25%;
-      background-color: $black-color;
+      left: calc(100% - (1.4rem + 0.3rem));
+      background: $white-color;
+      box-shadow: $bg-btn-darkmode-color;
     }
   }
 
   .slider {
     position: absolute;
+    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $white-color;
-    border-radius: 30px;
-    cursor: pointer;
+    background-color: $black-color;
     transition: 0.4s;
+    border-radius: 30px;
 
     &:before {
-      content: "";
       position: absolute;
-      left: 10%;
-      bottom: 0.2rem;
-      height: 1.2rem;
-      width: 1.2rem;
+      content: "";
+      height: 1.4rem;
+      width: 1.4rem;
       border-radius: 20px;
-      background: $bg-btn-darkmode-color;
+      left: 0.3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: $bg-btn-lightmode-color;
       transition: 0.4s;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 22%;
-      top: 0%;
-      width: 1.2rem;
-      height: 1.2rem;
-      border-radius: 100%;
-      background-color: $white-color;
-      transition: ease 0.4s;
     }
   }
 }

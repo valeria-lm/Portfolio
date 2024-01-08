@@ -1,0 +1,88 @@
+html.dark-mode {
+  background-color: $black-color;
+
+  body {
+    .nav {
+      .nav__sections {
+        li {
+          a {
+            color: $white-color;
+
+            &::after {
+              background-color: $white-color;
+            }
+          }
+        }
+      }
+
+      .nav__icons {
+        i {
+          color: $white-color;
+        }
+      }
+    }
+
+    .cover {
+      .cover__text-presentation {
+        h1 {
+          color: $white-color;
+        }
+      }
+    }
+
+    main {
+      .main__title {
+        color: $white-color;
+      }
+
+      .main__grid--cards {
+        background-color: $black-color;
+        border: 1px solid $white-color;
+
+        .card__img {
+          img {
+            border: 1px solid $white-color;
+          }
+        }
+
+        .card__info {
+          &--title {
+            color: $white-color;
+          }
+
+          button {
+            color: $white-color;
+            background: $black-color;
+            border: 1px solid $white-color;
+
+            &:hover {
+              color: $black-color;
+              background-color: $white-color;
+              transform: scale(1.05);
+              transition: 0.5s all;
+            }
+          }
+        }
+      }
+
+      .container-uxui-case-options {
+        .arrow-left-icon {
+          color: $white-color;
+          background-color: $black-color;
+          border: 1px solid $white-color;
+
+          &:hover {
+            color: $black-color;
+            background-color: $white-color;
+          }
+        }
+
+        div {
+          a {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}

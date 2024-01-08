@@ -4,22 +4,27 @@
   margin-bottom: 1rem;
 
   .arrow-left-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     width: 2rem;
     height: 2rem;
     text-decoration: none;
     background-color: $white-color;
-    border-radius: 50%;
+    border: 1px solid $black-color;
+    border-radius: 2rem;
+
+    &:hover {
+      color: $white-color;
+      background-color: $black-color;
+    }
   }
 
   div {
-    color: $white-color;
+    color: $pink-color;
 
     a {
       text-decoration: none;
-      color: $white-color;
+      color: $black-color;
     }
   }
 }

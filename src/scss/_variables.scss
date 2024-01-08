@@ -1,16 +1,13 @@
 // colors
 $white-color: #f1f1f1;
-$black-color: #0e0e0e;
-$bg-transparent-white-tags: #f1f1f12f;
-$bg-transparent-black-tags: #0e0e0e2f;
+$black-color: #0e1018;
+$bg-transparent-white-tags: #f1f1f15b;
+$bg-transparent-black-tags: #0e10185b;
 $turquoise-color: #00ffc8;
-$purple-color: #c765ff;
-$blue-color: #69b6ff;
-$bg-color-codePresentation: #0e1018;
-$circle-pink-color-codePresentation: #ff3c41;
-$circle-yellow-color-codePresentation: #ffdd40;
-$circle-green-color-codePresentation: #47cf73;
-$bg-btn-lightmode-color: linear-gradient(#dbc602, #db8f02);
-$bg-btn-darkmode-color: linear-gradient(#dbc602, #e2dca3);
-$principal-font-family: "Poppins", sans-serif;
+$yellow-color: #ff8c00;
+$pink-color: #ff0080;
+$bg-btn-lightmode-color: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+$bg-btn-darkmode-color: inset -3px -2px 5px -2px #8983f7,
+  inset -10px -4px 0 0 #a3dafb;
+$principal-font-family: "Archivo Expanded";
 $secondary-font-family: "Fira Sans", sans-serif;
