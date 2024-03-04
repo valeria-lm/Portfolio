@@ -10,12 +10,12 @@
     height: 0;
 
     &:checked + .slider {
-      background-color: $white-color;
+      background-color: $bg-color;
     }
 
     &:checked + .slider:before {
       left: calc(100% - (1.4rem + 0.3rem));
-      background: $white-color;
+      background: $bg-color;
       box-shadow: $bg-btn-darkmode-color;
     }
   }
@@ -27,7 +27,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $black-color;
+    background-color: $primary-text;
     transition: 0.4s;
     border-radius: 30px;
 

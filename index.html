@@ -15,8 +15,8 @@
   <body>
     <nav class="nav">
       <ul class="nav__sections nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./html/projects.html">Projects</a></li>
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li>
           <a href="./multimedia/CV-Valeria Lopez Matos.pdf" download
             >Download CV</a
@@ -34,7 +34,7 @@
           ><i class="fa-brands fa-square-github"></i
         ></a>
 
-        <label class="switch">
+        <!-- <label class="switch">
           <input
             type="checkbox"
             name="dark_light"
@@ -42,69 +42,75 @@
             id="toggle"
           />
           <span class="slider"></span>
-        </label>
+        </label> -->
       </div>
     </nav>
 
-    <section class="cover">
-      <div class="cover__text-presentation">
-        <div class="cover__text-presentation--photo">
-          <h1>Hello World<span>!</span></h1>
-          <div><img src="/multimedia/images/photo-profile.jpg" /></div>
+    <section class="hero-section">
+      <div class="cover">
+        <div class="cover__text-presentation">
+          <h1 class="cover__text-presentation--title">HELLO WORLD!</h1>
+          <div class="cover__text-presentation--subtitles">
+            <div><img src="/multimedia/images/photo-profile.jpg" /></div>
+            <div>
+              <h2>I'm Valeria Lopez.</h2>
+              <h2>GRAPHIC AND UX/UI DESIGNER</h2>
+            </div>
+          </div>
         </div>
-        <h1>I'm Valeria López,</h1>
-        <h1>UX/UI Designer</h1>
+
+        <div class="cover__container">
+          <img src="/multimedia/images/hero-cover.png" />
+        </div>
       </div>
 
-      <div class="cover__container">
-        <div class="cover__code-presentation">
-          <div class="cover__code-presentation--numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-          </div>
+      <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+    </section>
 
-          <div class="cover__code-presentation--info">
-            <span class="blue-color"
-              >.AboutMe <span class="purple-color">{</span></span
-            >
-            <div>
-              <p><span class="turquoise-color">Country:</span> Argentina;</p>
-              <p>
-                <span class="turquoise-color">Profession:</span> UX/UI Designer;
-              </p>
-            </div>
-            <span class="purple-color">}</span>
-          </div>
+    <section class="projects-section" id="projects">
+      <h1>UX/UI Design<span>.</span></h1>
+      <div class="projects-section--photos">
+        <div>
+          <img src="/multimedia/images/first__project--preview-image.png" />
         </div>
-
-        <br />
-
-        <div class="cover__code-presentation">
-          <div class="cover__code-presentation--numbers">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-          </div>
-
-          <div class="cover__code-presentation--info">
-            <span class="blue-color">&lt;p</span
-            ><span class="turquoise-color"> class=</span
-            ><span class="purple-color">"quote"</span
-            ><span class="blue-color">&gt;</span>
-            <p>
-              "Designing is about doing the most with the least"
-              <br />
-              <i> - Richard Buckminster</i>
-            </p>
-            <span class="blue-color">&lt/p&gt;</span>
-          </div>
+        <div>
+          <img src="/multimedia/images/second__project--preview-image.png" />
+        </div>
+        <div>
+          <img src="/multimedia/images/third__project--preview-image.png" />
+        </div>
+        <div>
+          <img src="/multimedia/images/forth__project--preview-image.png" />
         </div>
       </div>
     </section>
+
+    <section class="projects-section">
+      <h1>Branding<span>.</span></h1>
+      <div class="projects-section--photos">
+        <div>
+          <img src="/multimedia/images/fifth__project--preview-image.png" />
+        </div>
+        <div>
+          <img src="/multimedia/images/sixth__project--preview-image.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h1>Social Media<span>.</span></h1>
+      <div class="projects-section--photos">
+        <div class="socialmedia">
+          <img src="/multimedia/images/seventh__project--preview-image.png" />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h1><span>Hey,</span>thank you!</h1>
+      <h1>DO YOU HAVE A PROJECT IN MIND? LET'S MAKE IT HAPPEN!</h1>
+      <h1>vplopezm@gmail.com</h1>
+    </footer>
 
     <script src="app.js"></script>
   </body>

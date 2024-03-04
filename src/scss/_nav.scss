@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 2rem 4rem;
   margin-bottom: 2rem;
-  font-family: $principal-font-family;
+  font-family: $secondary-font-family;
 
   .nav__links {
     display: flex;
@@ -19,8 +19,8 @@
       a {
         position: relative;
         font-weight: 500;
-        font-size: 1rem;
-        color: $black-color;
+        font-size: 1.2rem;
+        color: $primary-text;
         text-decoration: none;
 
         &::after {
@@ -30,7 +30,7 @@
           bottom: -3px;
           width: 0%;
           height: 0.1rem;
-          background-color: $black-color;
+          background-color: $secondary-text;
           transition: all 0.3s ease-in-out;
         }
 
@@ -44,7 +44,7 @@
 
   .nav__icons {
     i {
-      color: $black-color;
+      color: $primary-text;
       font-size: 1.6rem;
 
       &:hover {
