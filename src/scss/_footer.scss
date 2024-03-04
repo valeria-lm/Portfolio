@@ -25,14 +25,14 @@ footer {
   h1:nth-child(2) {
     text-align: center;
     padding-bottom: 0.5rem;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     font-family: $secondary-font-family;
     font-weight: 500;
     color: $primary-text;
   }
 
   h1:nth-child(3) {
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     font-family: $secondary-font-family;
     font-weight: 500;
     color: $secondary-text;
