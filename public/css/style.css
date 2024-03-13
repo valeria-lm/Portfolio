@@ -179,6 +179,9 @@ html {
   .projects-section {
     padding: 6rem 1rem;
   }
+  .projects-section--photos {
+    gap: 1.5rem;
+  }
 }
 footer {
   display: flex;

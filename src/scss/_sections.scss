@@ -38,5 +38,9 @@
 @media (max-width: 720px) {
   .projects-section {
     padding: 6rem 1rem;
+
+    &--photos {
+      gap: 1.5rem;
+    }
   }
 }
