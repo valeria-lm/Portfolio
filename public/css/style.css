@@ -171,7 +171,7 @@ html {
      object-fit: cover;
 }
 .projects-section--photos .socialmedia img {
-  width: clamp(4rem, 80vw, 70rem);
+  width: clamp(4rem, 80vw, 67rem);
   height: clamp(9.5rem, 42vw, 36rem);
 }
 
