@@ -24,12 +24,12 @@
 
     div img {
       width: clamp(5rem, 40vw, 30rem);
-      height: clamp(10rem, 45vw, 35rem);
+      height: clamp(11rem, 46vw, 36rem);
       object-fit: cover;
     }
 
     .socialmedia img {
-      width: clamp(5rem, 80vw, 70rem);
+      width: clamp(4rem, 80vw, 70rem);
       height: clamp(10rem, 42vw, 38rem);
     }
   }
