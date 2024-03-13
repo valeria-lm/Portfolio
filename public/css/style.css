@@ -165,14 +165,14 @@ html {
   gap: 3rem;
 }
 .projects-section--photos div img {
-  width: clamp(5rem, 40vw, 30rem);
-  height: clamp(11rem, 46vw, 36rem);
+  width: clamp(15rem, 40vw, 30rem);
+  height: clamp(18rem, 46vw, 36rem);
   -o-object-fit: cover;
      object-fit: cover;
 }
 .projects-section--photos .socialmedia img {
   width: clamp(4rem, 80vw, 70rem);
-  height: clamp(10rem, 42vw, 38rem);
+  height: clamp(9.5rem, 42vw, 36rem);
 }
 
 @media (max-width: 720px) {
