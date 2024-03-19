@@ -172,7 +172,7 @@ html {
 }
 .projects-section--photos .socialmedia img {
   width: clamp(4rem, 80vw, 67rem);
-  height: clamp(9.5rem, 42vw, 36rem);
+  height: clamp(9.5rem, 43vw, 36rem);
 }
 
 @media (max-width: 720px) {
